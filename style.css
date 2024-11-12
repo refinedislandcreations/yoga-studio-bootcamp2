@@ -15,6 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 0.9rem;
   line-height: 30px;
   letter-spacing: -0.025em;
     max-width: 100%; /* Allow it to expand to the full width of the screen */
@@ -47,6 +48,21 @@ p {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    letter-spacing: 0.5rem;
 }  
 
+.button {
+  background-color: #C97324;
+  color: #FBF2E9;  
+  text-transform: uppercase;
+}
 
+.button-footer {
+  background-color: #FBF2E9;
+  color: #C97324;  
+  text-transform: uppercase;
+}
+
+.text-light {
+  color:#FBF2E9;  
+}

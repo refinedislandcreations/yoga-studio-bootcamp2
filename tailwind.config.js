@@ -39,6 +39,7 @@ module.exports = {
         'agreen': '#003f31',
         'white': 	'#FFFFFF',
         'black': '#000000',
+        'pumpkin': '#C97324',
       },
       extend: {
         lineHeight: {

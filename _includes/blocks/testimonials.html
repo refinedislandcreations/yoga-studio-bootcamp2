@@ -1,0 +1,21 @@
+<section class="py-5 border-t-2">
+  <div class="container mx-auto">
+    <p class="uppercase font-bold text-base mt-2 sm:mt-0 pb-2 sm:pb-8">{{block.title}}</p>
+  <div class="flex overflow-x-auto gap-4">
+    {% for item in block.items %}
+
+      <div class="text-center">
+        <div class="flex flex-row justify-center">
+          <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full min-h-30 border">
+        </div>
+        <p class="border-b py-5">{{item.label}}</p>
+        <p class="pt-5">{{item.description}}</p>
+      </div>
+
+    {% endfor %}
+  </div>
+  </div>
+</section>
+
+
+
