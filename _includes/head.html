@@ -1,0 +1,60 @@
+<!------------ Technical Metadata  --------------------------------->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!------------ SEO Metadata  --------------------------------->
+<title> {{page.seo.title }} </title> 
+<meta name="description" content="{{page.seo.description }}">
+<meta name="keywords" content="{{page.seo.keywords }}">
+
+
+<!-- Canonical Tag -->
+<link rel="canonical" href="https://refinedislandcreations.com{{ page.url }}">
+
+
+{% if page.seo.hide-from-google == true %}
+    <meta name="robots" content="nofollow">
+    <meta name="googlebot" content="noindex">
+{% else %}
+     <meta name="robots" content="follow">
+     <meta name="googlebot" content="index">
+{% endif %}
+
+
+<!------------  Social media sharing META Tags ------------>
+<meta property="og:title" content="{{ page.title | default: site.data.site-settings.seo.title }}">
+<meta property="og:description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}"> 
+<meta property="og:image" content="{{ page.seo.social_image | default: site.data.site-settings.seo.social_image }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="{{ page.seo.twitter_card | default: site.data.site-settings.seo.twitter_card }}">
+<meta name="og:site_name" content="{{ site.data.site-settings.seo.site_name }}">
+<link rel="icon" type="image/png" href="{{ site.data.site-settings.seo.favicon_image }}">
+
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!------------ Google Fonts ------------>
+
+
+ <!----Favicon----->  
+
+<!------------AOS---------------->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-------------Lightgallery--------------------->
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!------------ Tailwind Stylesheet  ------------>
+<link rel="stylesheet" type="text/css" href="/assets/css/output-style.css">
+
+<!------------ CloudCannon Editor Stylesheet   ------------>
+<link rel="stylesheet" type="text/css" href="/editor.css" />
+
+<!------------ Custom Stylesheet   ------------>
+<link rel="stylesheet" type="text/css" href="/style.css" />

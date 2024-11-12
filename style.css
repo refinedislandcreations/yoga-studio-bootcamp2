@@ -1,0 +1,31 @@
+/* ----------- Import Tailwind -----*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    
+
+html {
+    scroll-behavior: smooth;
+      }
+
+
+/* For regular laptops and smaller screens */
+body {
+    max-width: 100%; /* Allow it to expand to the full width of the screen */
+    @apply leading-none
+}
+
+
+p {
+    @apply leading-normal
+}
+
+/* For larger screens like flatscreen TVs */
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px; /* Set a specific max-width for larger screens */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+}
+
