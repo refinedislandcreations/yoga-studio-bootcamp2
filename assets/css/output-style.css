@@ -408,20 +408,42 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
 }
-.top-1 {
-  top: 0.25rem;
-}
 .left-0 {
   left: 0px;
-}
-.top-0 {
-  top: 0px;
 }
 .top-5p {
   top: 5%;
@@ -429,6 +451,10 @@ video {
 .mx-20p {
   margin-left: 20%;
   margin-right: 20%;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-10p {
   margin-bottom: 10%;
@@ -438,6 +464,18 @@ video {
 }
 .mt-5p {
   margin-top: 5%;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .inline-block {
   display: inline-block;
@@ -454,8 +492,14 @@ video {
 .max-h-\[37rem\] {
   max-height: 37rem;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-full {
   width: 100%;
+}
+.max-w-md {
+  max-width: 28rem;
 }
 @keyframes bounce {
   0%, 100% {
@@ -534,6 +578,9 @@ video {
 }
 .border-b-4 {
   border-bottom-width: 4px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-\[\#38a3a5\] {
   --tw-border-opacity: 1;
@@ -629,6 +676,10 @@ video {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pb-5p {
   padding-bottom: 5%;
 }
@@ -637,6 +688,9 @@ video {
 }
 .pt-5p {
   padding-top: 5%;
+}
+.pr-2 {
+  padding-right: 0.5rem;
 }
 .text-center {
   text-align: center;
@@ -716,7 +770,15 @@ html {
 
 /* For regular laptops and smaller screens */
 body {
-    max-width: 100%; /* Allow it to expand to the full width of the screen */ line-height: 1}
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: -0.025em;
+    max-width: 100%; /* Allow it to expand to the full width of the screen */
+  background-color: #FBF2E9;  
+  color: #C97324;  
+  line-height: 1}
 
 
 p {
@@ -730,23 +792,74 @@ p {
         margin: 0 auto; /* Center the content horizontally */
     }
 }
+
+.heading-font {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+.sub-heading-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+ 
 .hover\:border-b-4:hover {
   border-bottom-width: 4px;
 }
+ 
 .hover\:bg-\[\#bc4749\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(188 71 73 / var(--tw-bg-opacity));
 }
+ 
 .hover\:bg-\[\#fb8500\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(251 133 0 / var(--tw-bg-opacity));
 }
+ 
 .hover\:text-\[\#ffb703\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 183 3 / var(--tw-text-opacity));
 }
+ 
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+ 
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+ 
+@media (min-width: 640px) {
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+  .sm\:mb-12 {
+    margin-bottom: 3rem;
+  }
+  .sm\:flex {
+    display: flex;
+  }
+  .sm\:justify-center {
+    justify-content: center;
+  }
+  .sm\:text-left {
+    text-align: left;
+  }
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}  
+
 
