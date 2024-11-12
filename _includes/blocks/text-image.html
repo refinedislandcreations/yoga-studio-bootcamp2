@@ -13,8 +13,8 @@
         </div>
         
       </div>
-      <div class="max-h-2/3 {% if block.image-mobile-position == 'top' %} order-first {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} ">
-        <img src="{{block.image}}" alt="{{block.image-alt}}" class="w-full h-full object-cover">
+      <div class="relative min-h-[75vh] {% if block.image-mobile-position == 'top' %} order-first {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} ">
+        <img src="{{block.image}}" alt="{{block.image-alt}}" class="absolute top-0 left-0 w-full h-full object-cover">
       </div>
     
     </div>
