@@ -1,23 +1,24 @@
-<header class="container mx-auto min-h-screen flex flex-col mb-6 sm:mb-12">
+<header class="flex flex-col mb-6 sm:mb-12">
+  <div class="bg-cover bg-center bg-no-repeat relative min-h-screen " style="background-image: url('{{ page.header.image }}'); background-position: {{ page.header.image-position }};">
 
-  <div class="text-center sm:text-left sm:flex justify-between items-center border-b-2 py-5">
-    <p class="mb-5 sm:mb-0">The Yoga Studio</p>
-    <div class="flex items-center">
-      </div>
-      <nav class="flex justify-between sm:justify-center w-full max-w-md gap-3">
+    <div class="text-center sm:text-left sm:flex justify-between items-center py-5 px-5">
+      <p class="mb-5 sm:mb-0">The Yoga Studio</p>
+      <nav class="flex justify-between w-full max-w-md gap-3">
         <a href="#" class="pr-2 inline-block">Our Classes</a>
-        <a href="#" class="pr-2 inline-block">Schedule/a>
+        <a href="#" class="pr-2 inline-block">Schedule</a>
         <a href="#" class="inline-block">Contact</a>
       </nav>
-  </div>
-    
-  <div class="mt-10 mb-8">
-    <p class="uppercase sub-heading-font">Welcome to</p>
-    <h1 class="text-3xl sm:text-5xl">The Yoga Studio</h1>
-  </div>
+    </div>
 
-  <div class="relative">
-    <div></div>
+    
+    
+    <div class="flex flex-col container mx-auto min-h-screen justify-center px-10 mt-10 mb-8"> 
+      <hr class="relative -left-20 w-80">
+      {% if page.header.subtitle %}
+      <p class="uppercase sub-heading-font">{{ page.header.subtitle }}</p>
+      {% endif %}
+      <h1 class="heading-font text-3xl sm:text-5xl">{{ page.header.title }}</h1>
+    </div>
+
   </div>
-  
 </header>

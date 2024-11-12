@@ -448,6 +448,12 @@ video {
 .top-5p {
   top: 5%;
 }
+.left-20 {
+  left: 5rem;
+}
+.-left-20 {
+  left: -5rem;
+}
 .mx-20p {
   margin-left: 20%;
   margin-right: 20%;
@@ -477,6 +483,9 @@ video {
 .mt-5p {
   margin-top: 5%;
 }
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
 }
@@ -498,8 +507,14 @@ video {
 .w-full {
   width: 100%;
 }
+.w-80 {
+  width: 20rem;
+}
 .max-w-md {
   max-width: 28rem;
+}
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 @keyframes bounce {
   0%, 100% {
@@ -679,6 +694,14 @@ video {
 .py-5p {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .pb-5p {
   padding-bottom: 5%;
