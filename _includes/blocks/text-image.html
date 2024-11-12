@@ -1,0 +1,23 @@
+  <!----------Text Image Section----------->
+  
+  <section class="container mx-auto px-8">
+    
+    <div class="flex flex-col sm:grid sm:grid-cols-2 h-full sm:gap-4">
+      <div class="flex flex-col {% if block.text-position == 'bottom' %} justify-end {% endif %} ">
+        <h3 class="uppercase font-bold text-base mt-2 sm:mt-0 pb-2 sm:pb-8">{{block.title}}</h3>
+    
+        <p class="pb-2 sm:pb-4">{{block.paragraph}}</p>
+        
+        <div>
+          <a href="{{block.button-url}}" class="btn-primary">{{block.button-text}}</a>
+        </div>
+        
+      </div>
+      <div class="h-full {% if block.image-mobile-position == 'top' %} order-first {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} ">
+        <img src="{{block.image}}" alt="{{block.image-alt}}" class="w-full h-full object-cover">
+      </div>
+    
+    </div>
+
+  </section>
+
