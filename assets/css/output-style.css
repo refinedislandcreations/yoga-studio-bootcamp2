@@ -463,13 +463,13 @@ video {
 .-m-px {
   margin: -1px;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
