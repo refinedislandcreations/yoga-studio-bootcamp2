@@ -544,6 +544,9 @@ video {
 .max-w-lg {
   max-width: 32rem;
 }
+.max-w-md {
+  max-width: 28rem;
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -933,21 +936,12 @@ p {
 }
 
 @media (min-width: 768px) {
-  .md\:min-h-\[50vh\] {
-    min-height: 50vh;
-  }
   .md\:min-h-\[40vh\] {
     min-height: 40vh;
-  }
-  .md\:p-10 {
-    padding: 2.5rem;
   }
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-  .md\:pb-0 {
-    padding-bottom: 0px;
   }
 }
 
@@ -958,7 +952,17 @@ p {
   .lg\:pl-44 {
     padding-left: 11rem;
   }
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
+  }
   .lg\:pr-44 {
     padding-right: 11rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
