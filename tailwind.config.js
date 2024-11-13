@@ -26,22 +26,10 @@ module.exports = {
         '8xl': ['6rem', '1'],
         '9xl': ['8rem', '1'],
       },
-      colors: {
-        'blue': '#1fb6ff',
-        'purple': '#7e5bef',
-        'pink': '#ff49db',
-        'orange': '#ff7849',
-        'green': '#13ce66',
-        'yellow': '#ffc82c',
-        'khaki': '#a5a894',
-        'dgreen': '#001E17',
-        'smoke': '#F5F5F5',
-        'agreen': '#003f31',
-        'white': 	'#FFFFFF',
-        'black': '#000000',
-        'pumpkin': '#C97324',
-      },
       extend: {
+        colors: {
+          'pumpkin': '#C97324',
+        },
         lineHeight: {
           'tight': '.85',
           'snug': '.95',

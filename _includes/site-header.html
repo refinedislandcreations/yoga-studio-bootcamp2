@@ -1,7 +1,7 @@
-<header class="flex flex-col border-b relative">
-  <div class="absolute top-0 left-0 w-full text-center sm:text-left sm:flex justify-between items-center py-5 px-5 z-10">
-    <a href="/index.html" class="mb-5 sm:mb-0">The Yoga Studio</a>
-    <nav class="flex justify-between w-full max-w-md gap-3">
+<header class="flex flex-col border-b border-pumpkin relative">
+  <div class="absolute top-0 left-0 w-full text-center sm:text-left sm:flex justify-between items-center py-5 px-5 z-10 font-semibold">
+    <a href="/index.html" class="mb-5 sm:mb-0 text-2xl">The Yoga Studio</a>
+    <nav class="flex justify-center sm:justify-end w-full max-w-md gap-3">
       <a href="/classes.html" class="pr-2 inline-block">Our Classes</a>
       <a href="/schedule.html" class="pr-2 inline-block">Schedule</a>
       <a href="/contact.html" class="inline-block">Contact</a>
@@ -14,8 +14,8 @@
 
     
     
-    <div class="flex flex-col absolute left-0 container mx-auto min-h-screen justify-center px-10 mt-10 mb-8"> 
-      <hr class="relative -left-20 w-80 pb-4">
+    <div class="flex flex-col absolute left-0 container mx-auto min-h-screen justify-center px-10"> 
+      <hr class="relative -left-20 w-80 pb-4 border-pumpkin">
       {% if page.header.subtitle %}
       <p class="uppercase sub-heading-font">{{ page.header.subtitle }}</p>
       {% endif %}

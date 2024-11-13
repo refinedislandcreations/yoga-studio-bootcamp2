@@ -1,0 +1,36 @@
+
+  <div class="container mx-auto px-8 py-12 md:py-16">
+
+  
+    <div class="flex flex-col sm:grid grid-cols-2 gap-4">
+      <div>
+        <img src="{{block.image}}" alt="{{block.image-alt}}" class="w-full h-50 sm:h-96 object-cover">
+      </div>
+        <div>
+          <form name="contact" method="POST" data-netlify="true" class="mb-4 grid max-w-md">
+            <div class="mb-2">
+              <label for="name" class="sr-only">Name</label>
+              <input id="name" name="name" type="text" placeholder="{{block.name-placeholder}}" class="w-full placeholder:text-pumpkin text-pumpkin border-b-2 border-b-pumpkin focus:border-b-black outline-none bg-transparent" />
+              
+            </div>
+          
+            <div class="mb-2">
+              <label for="email" class="sr-only">Email</label>
+              <input id="email" name="email" type="email" placeholder="{{block.email-placeholder}}" class="w-full placeholder:text-pumpkin text-pumpkin border-b-2 border-b-pumpkin focus:border-b-black outline-none bg-transparent" />
+            </div>
+          
+            <div class="mb-4">
+              <label for="message" class="block"> {{block.message-label}} </label>
+              <textarea id="message" name="message" placeholder="" rows="6" class="min-w-full border-2 border-pumpkin focus:border-black outline-none bg-transparent"></textarea>
+            </div>
+          
+            <input type="hidden" name="form-name" value="contact">
+          
+            <div class="{% if block.button-align == 'left' %} text-left {% else %} sm:text-right {% endif %}">
+              <button type="submit" class="button px-5 py-2">{{block.button-text}}</button>
+            </div>
+          </form>
+        </div>
+        
+    </div>
+  </div>

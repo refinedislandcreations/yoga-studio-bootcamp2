@@ -1,0 +1,26 @@
+classes:
+ - name: Bikram Hot Yoga
+   image: /images/image-8.jpg
+   image-alt:
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   button-url: www.google.com
+   button-text: Sign up
+ - name: Mandala Yoga
+   image: /images/image-3.jpg
+   image-alt:
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   button-url: www.google.com
+   button-text: Sign up
+ - name: Chakra Flow
+   image: /images/image-7.jpg
+   image-alt:
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   button-url: www.google.com
+   button-text: Sign up
+ - name: Vinyasa Flow
+   image: /images/image-8.jpg
+   image-alt:
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   button-url: www.google.com
+   button-text: Sign up
+

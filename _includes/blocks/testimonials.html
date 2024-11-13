@@ -1,26 +1,26 @@
-<section class="py-5 border-t-2">
-  
+<section class="py-12 border-t border-pumpkin ">
   <div class="container mx-auto">
-    <p class="uppercase font-bold text-base mt-2 sm:mt-0 pb-2 sm:pb-8">{{block.title}}</p>
-  <div class="flex overflow-x-auto gap-4 ">
-    
-    {% for item in block.items %}
-<div class="{% if block.main-border == 'border' %} border pt-5 {% endif %}">
-      <div class="text-center">
-        <div class="flex flex-row justify-center relative min-h-[50vh] mx-5">
-          <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border">
+    {% if page.block.title %}
+    <p class="heading-font text-4xl mt-2 sm:mt-0 pb-2 sm:pb-8">{{block.title}}</p>
+    {% endif %}
+    <div class="flex overflow-x-auto gap-4 ">
+      {% for item in block.items %}
+      <div class="{% if block.main-border == 'border' %} border border-pumpkin pt-5 {% endif %}">
+        <div class="text-center">
+          <div class="flex flex-row justify-center relative min-h-[50vh] mx-5">
+            <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border">
+          </div>
+          <p class="border-b border-pumpkin py-5 heading-font text-xl">{{item.label}}</p>
+          <p class="pt-5">{{item.description}}</p>
+          {% if item.button-url %}
+          <div class="pt-5 pb-5">
+            <a href="{{item.button-url}}" class="button px-5 py-2 ">{{item.button-text}}</a>
+          </div>
+          {% endif %}
         </div>
-        <p class="border-b py-5">{{item.label}}</p>
-        <p class="pt-5">{{item.description}}</p>
-        {% if item.button-url %}
-        <div class="pt-5 pb-5">
-          <a href="{{item.button-url}}" class="button px-5 py-2 ">{{item.button-text}}</a>
-        </div>
-        {% endif %}
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
   </div>
 </section>
 
