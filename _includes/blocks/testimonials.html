@@ -5,13 +5,13 @@
     {% endif %}
     <div class="px-8 sm:flex overflow-x-auto gap-4 ">
       {% for item in block.items %}
-      <div class="{% if block.main-border == 'border' %} border border-featured pt-5 {% endif %}">
+      <div class="{% if block.main-border == 'border' %} border border-featured px-5 sm:px-0 pt-5 {% endif %} mb-8 sm:mb-0">
         <div class="sm:text-center">
           <div class="flex flex-row justify-center relative min-h-30 sm:min-h-[50vh] sm:mx-5">
             <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border">
           </div>
           <p class="border-b border-featured py-2 sm:py-5 heading-font text-xl">{{item.label}}</p>
-          <p class="pt-2 sm:pt-5 pb-8 sm:pb-0">{{item.description}}</p>
+          <p class="pt-2 sm:pt-5 sm:pb-0">{{item.description}}</p>
           {% if item.button-url %}
           <div class="pt-5 pb-5">
             <a href="{{item.button-url}}" class="button px-5 py-2 ">{{item.button-text}}</a>
