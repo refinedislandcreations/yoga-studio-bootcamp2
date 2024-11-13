@@ -19,8 +19,8 @@ body {
   line-height: 30px;
   letter-spacing: -0.025em;
     max-width: 100%; /* Allow it to expand to the full width of the screen */
-  background-color: #FBF2E9;  
-  color: #C97324;
+  background-color: var(--base-color);  
+  color: var(--featured-color);
     @apply leading-none
 
 }
@@ -52,17 +52,17 @@ p {
 }  
 
 .button {
-  background-color: #C97324;
-  color: #FBF2E9;  
+  background-color: var(--featured-color);
+  color: var(--base-color);   
   text-transform: uppercase;
 }
 
 .button-footer {
-  background-color: #FBF2E9;
-  color: #C97324;  
+  background-color: var(--base-color);  
+  color: var(--featured-color);  
   text-transform: uppercase;
 }
 
 .text-light {
-  color:#FBF2E9;  
+  color:var(--base-color);  
 }

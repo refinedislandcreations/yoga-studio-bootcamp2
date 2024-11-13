@@ -29,6 +29,7 @@ module.exports = {
       extend: {
         colors: {
           'featured': 'var(--featured-color)',
+          'base': 'var(--base-color)',
         },
         lineHeight: {
           'tight': '.85',
