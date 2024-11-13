@@ -116,6 +116,16 @@ _structures:
             paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione, hic molestias aliquam aut enim magnam ea fugit doloribus nostrum voluptate unde ipsa optio blanditiis officia voluptatem fugiat voluptas quae.
             button-url: www.google.com
             button-text: Find out more
+      - label: Contact Form
+        value:
+          _id: contact-form
+          name-placeholder: Name
+          email-placeholder: Email
+          message-label: Message
+          button-align: 
+          button-text: Send
+          image: /images/image-1.jpg
+          image-alt:
       - label: Card Layout
         value:
           _id: testimonials

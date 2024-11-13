@@ -28,7 +28,7 @@ module.exports = {
       },
       extend: {
         colors: {
-          'pumpkin': '#C97324',
+          'featured': 'var(--featured-color)',
         },
         lineHeight: {
           'tight': '.85',

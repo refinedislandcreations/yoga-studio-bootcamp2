@@ -515,17 +515,17 @@ video {
 .h-full {
   height: 100%;
 }
+.min-h-\[40vh\] {
+  min-height: 40vh;
+}
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
-.min-h-\[75vh\] {
-  min-height: 75vh;
+.min-h-\[6ovh\] {
+  min-height: 6ovh;
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-\[40vh\] {
-  min-height: 40vh;
 }
 .w-80 {
   width: 20rem;
@@ -579,10 +579,6 @@ video {
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
-.divide-pumpkin > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(201 115 36 / var(--tw-divide-opacity));
-}
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -613,18 +609,6 @@ video {
 .border-t {
   border-top-width: 1px;
 }
-.border-pumpkin {
-  --tw-border-opacity: 1;
-  border-color: rgb(201 115 36 / var(--tw-border-opacity));
-}
-.border-b-pumpkin {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(201 115 36 / var(--tw-border-opacity));
-}
-.bg-pumpkin {
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
-}
 .bg-transparent {
   background-color: transparent;
 }
@@ -646,12 +630,6 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.p-5 {
-  padding: 1.25rem;
-}
-.p-12 {
-  padding: 3rem;
 }
 .p-8 {
   padding: 2rem;
@@ -696,9 +674,6 @@ video {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
-.pl-10 {
-  padding-left: 2.5rem;
-}
 .pl-44 {
   padding-left: 11rem;
 }
@@ -707,9 +682,6 @@ video {
 }
 .pr-2 {
   padding-right: 0.5rem;
-}
-.pr-44 {
-  padding-right: 11rem;
 }
 .pr-5 {
   padding-right: 1.25rem;
@@ -744,10 +716,6 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.text-pumpkin {
-  --tw-text-opacity: 1;
-  color: rgb(201 115 36 / var(--tw-text-opacity));
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -816,14 +784,12 @@ p {
   color:#FBF2E9;  
 }
 
-.placeholder\:text-pumpkin::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(201 115 36 / var(--tw-text-opacity));
+.placeholder\:text-featured::-moz-placeholder {
+  color: var(--featured-color);
 }
 
-.placeholder\:text-pumpkin::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(201 115 36 / var(--tw-text-opacity));
+.placeholder\:text-featured::placeholder {
+  color: var(--featured-color);
 }
 
 .focus\:border-black:focus {
@@ -876,11 +842,11 @@ p {
   .sm\:pb-8 {
     padding-bottom: 2rem;
   }
-  .sm\:pr-14 {
-    padding-right: 3.5rem;
-  }
   .sm\:pl-10 {
     padding-left: 2.5rem;
+  }
+  .sm\:pr-14 {
+    padding-right: 3.5rem;
   }
   .sm\:pr-44 {
     padding-right: 11rem;
