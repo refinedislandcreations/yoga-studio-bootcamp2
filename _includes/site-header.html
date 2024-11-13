@@ -1,14 +1,14 @@
 <header class="flex flex-col border-b border-featured relative">
   <div class="absolute top-0 left-0 w-full text-center sm:text-left sm:flex justify-between items-center py-5 px-5 z-10 font-semibold">
     <a href="/index.html" class="mb-5 sm:mb-0 text-2xl">The Yoga Studio</a>
-    <nav class="flex justify-center sm:justify-end w-full max-w-md gap-3">
+    <nav class="flex justify-center sm:justify-end w-full gap-3">
       <a href="/classes.html" class="pr-2 inline-block">Our Classes</a>
       <a href="/schedule.html" class="pr-2 inline-block">Schedule</a>
       <a href="/contact.html" class="inline-block">Contact</a>
     </nav>
   </div>
-  <div class="bg-center bg-no-repeat relative min-h-screen {% if page.header.image-cover == '75%' %} sm:bg-right sm:bg-[length:75%_auto] {% else %} bg-cover  {% endif %}" 
-  style="background-image: url('{{ page.header.image }}');">
+  <div class="relative min-h-screen">
+    <img src="{{ page.header.image }}" class="absolute object-cover right-0 top-0 bottom-0 left-0 w-full h-full {% if page.header.image-cover == '75%' %} sm:left-25p sm:w-3/4 {% endif %}" style="object-position: {{page.header.image-position}};" alt="{{page.header.image-alt}}">
 
     
     <div class="flex flex-col absolute left-0 container mx-auto min-h-screen justify-center px-5 sm:px-10"> 

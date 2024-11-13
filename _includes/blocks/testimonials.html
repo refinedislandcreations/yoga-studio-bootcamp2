@@ -3,12 +3,12 @@
     {% if block.title %}
     <p class="heading-font text-4xl mt-2 sm:mt-0 pl-8 pb-5 sm:pb-8">{{block.title}}</p>
     {% endif %}
-    <div class="px-8 sm:flex overflow-x-auto gap-4 ">
+    <div class="px-8 sm:flex overflow-x-auto">
       {% for item in block.items %}
       <div class="{% if block.main-border == 'border' %} border border-featured px-5 sm:px-0 pt-5 {% endif %} mb-8 sm:mb-0">
         <div class="sm:text-center">
           <div class="flex flex-row justify-center relative min-h-30 sm:min-h-[50vh] sm:mx-5">
-            <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border">
+            <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border" style="object-position: {{item.image-position}};">
           </div>
           <p class="border-b border-featured py-2 sm:py-5 heading-font text-xl">{{item.label}}</p>
           <p class="pt-2 sm:pt-5 sm:pb-0">{{item.description}}</p>

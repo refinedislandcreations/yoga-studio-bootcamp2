@@ -3,7 +3,7 @@
   <section class="border-b border-featured">
     
     <div class="flex flex-col sm:grid sm:grid-cols-2">
-      <div class="max-w-lg p-8 sm:flex sm:flex-col justify-end pb-10 border-r border-featured sm:pl-10 sm:pr-44 {% if block.image-desktop-position == 'left' %} border-l border-r-0 pr-10 pl-44 {% endif %} ">
+      <div class="sm:max-w-lg p-8 sm:flex sm:flex-col justify-end pb-10  sm:border-r border-featured border-b sm:border-b-0 md:pr-44 {% if block.image-desktop-position == 'left' %} sm:border-l sm:border-r-0 md:pl-44 {% endif %} ">
         <h3 class="heading-font text-4xl mt-2 sm:mt-0 pb-2 sm:pb-8">{{block.title}}</h3>
     
         <p class="pb-5">{{block.paragraph}}</p>
@@ -14,7 +14,7 @@
         
       </div>
       <div class="relative min-h-[40vh] sm:min-h-[75vh] {% if block.image-mobile-position == 'top' %} order-first {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} ">
-        <img src="{{block.image}}" alt="{{block.image-alt}}" class="absolute top-0 left-0 w-full h-full object-cover">
+        <img src="{{block.image}}" alt="{{block.image-alt}}" class="absolute top-0 left-0 w-full h-full object-cover" style="object-position: {{block.image-position}};">
       </div>
     
     </div>
