@@ -96,6 +96,50 @@ _structures:
     style: select
     id_key:
     values:
+      - label: Split Banner
+        value: 
+            _id: text-image
+            title: Duis Aute Irure
+            paragraph: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi esse mollitia suscipit illum tempore, modi qui assumenda magni, ratione ex unde alias velit dolorem, iure voluptas beatae ut laboriosam.
+            button-url: www.google.com
+            button-text: Sign up
+            image: /images/image-2.jpg
+            image-alt:
+      - label: Split Banner with Grid
+        value:
+            _id: image-text-grid
+            image-mobile-position:
+            image-desktop-position: left
+            image: /images/image-3.jpg
+            image-alt:
+            title: Our Classes
+            paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione, hic molestias aliquam aut enim magnam ea fugit doloribus nostrum voluptate unde ipsa optio blanditiis officia voluptatem fugiat voluptas quae.
+            button-url: www.google.com
+            button-text: Find out more
+      - label: Card Layout
+        value:
+          _id: testimonials
+          title: Testimonials
+          main-border: 
+          items:
+          - image: /images/image-4.jpg
+            image-alt:
+            label: Duis Aute
+            description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit exercitationem quaerat voluptas quod quidem sunt nulla voluptate. 
+            button-url:
+            button-text:
+          - image: /images/image-5.jpg
+            image-alt:
+            label: Duis Aute
+            description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit exercitationem quaerat voluptas quod quidem sunt nulla voluptate. 
+            button-url:
+            button-text:
+          - image: /images/image-6.jpg
+            image-alt:
+            label: Duis Aute
+            description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit exercitationem quaerat voluptas quod quidem sunt nulla voluptate. 
+            button-url:
+            button-text:
 _snippets:
   _cc_jekyll_unknown_paired_tag:
     hidden: true
