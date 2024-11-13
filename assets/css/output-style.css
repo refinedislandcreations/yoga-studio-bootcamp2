@@ -547,6 +547,12 @@ video {
 .max-w-md {
   max-width: 28rem;
 }
+.shrink-0 {
+  flex-shrink: 0;
+}
+.basis-full {
+  flex-basis: 100%;
+}
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -590,8 +596,8 @@ video {
 .divide-featured > :not([hidden]) ~ :not([hidden]) {
   border-color: var(--featured-color);
 }
-.overflow-x-auto {
-  overflow-x: auto;
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 .border {
   border-width: 1px;
@@ -625,6 +631,9 @@ video {
 }
 .bg-cover {
   background-size: cover;
+}
+.bg-\[length\:101\%\] {
+  background-size: 101%;
 }
 .bg-center {
   background-position: center;
@@ -957,6 +966,9 @@ p {
   }
   .lg\:pr-44 {
     padding-right: 11rem;
+  }
+  .lg\:pr-20 {
+    padding-right: 5rem;
   }
 }
 
