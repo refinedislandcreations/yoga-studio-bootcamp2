@@ -3,9 +3,9 @@
     {% if block.title %}
     <p class="heading-font text-4xl mt-2 sm:mt-0 pl-8 pb-5 sm:pb-8">{{block.title}}</p>
     {% endif %}
-    <div class="px-8 sm:flex overflow-x-scroll container mx-auto gap-4">
+    <div class="{% if block.items.size >= 4 %} px-12 overflow-x-scroll {% else %} px-8 container mx-auto {% endif %} sm:flex  gap-4">
       {% for item in block.items %}
-      <div class="shrink-0 {% if block.main-border == 'border' %} border border-featured px-5 sm:px-0 pt-5 {% endif %} mb-8 sm:mb-0">
+      <div class="{% if block.items.size >= 4 %} shrink-0 {% endif %} {% if block.main-border == 'border' %} border border-featured px-5 sm:px-0 pt-5 {% endif %} mb-8 sm:mb-0">
         <div class="sm:text-center">
           <div class="flex flex-row justify-center relative min-h-30 md:min-h-[40vh] sm:mx-5">
             <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border" style="object-position: {{item.image-position}};">

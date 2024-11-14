@@ -629,9 +629,6 @@ video {
 .bg-transparent {
   background-color: transparent;
 }
-.bg-cover {
-  background-size: cover;
-}
 .bg-\[length\:101\%\] {
   background-size: 101%;
 }
@@ -667,6 +664,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -961,14 +962,11 @@ p {
   .lg\:pl-44 {
     padding-left: 11rem;
   }
-  .lg\:pr-10 {
-    padding-right: 2.5rem;
+  .lg\:pr-20 {
+    padding-right: 5rem;
   }
   .lg\:pr-44 {
     padding-right: 11rem;
-  }
-  .lg\:pr-20 {
-    padding-right: 5rem;
   }
 }
 
