@@ -66,3 +66,62 @@ p {
 .text-light {
   color:var(--base-color);  
 }
+
+
+#momence-embed #momence-embed #momence-plugin-host-schedule *   {
+  @apply bg-base;
+}
+
+/* Styling the headings */
+#momence-embed #momence-plugin-host-schedule h4 {
+  @apply text-featured;
+}    
+
+/* Hide featured image */
+#momence-embed #momence-plugin-host-schedule .jQbyba {
+  display: none;
+}
+
+/* Styling the button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  @apply inline-block px-4 py-2 uppercase tracking-wide bg-featured text-base rounded-none ;
+}
+
+/* Hiding the author */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+  display: none;
+}
+
+/* Hiding the word class */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+  display: none;
+}
+
+/* Hiding the description */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-description {
+  display: none;
+}
+
+/* Background in general */
+#momence-embed #momence-plugin-host-schedule * {
+  @apply bg-base text-featured rounded-none border-featured;
+}
+
+/* Boxes around arrows */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+  @apply border-none;
+}
+
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+  @apply font-serif text-2xl;
+}
+
+/* Powered by button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+  display: none;
+}
+
+/* Line under number at the bottom */
+#momence-embed #momence-plugin-host-schedule .momence-pagination-button::after {
+  @apply bg-featured;
+}

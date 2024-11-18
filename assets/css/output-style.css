@@ -645,6 +645,10 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -664,10 +668,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -797,24 +797,94 @@ p {
   color:var(--base-color);  
 }
 
+
+#momence-embed #momence-embed #momence-plugin-host-schedule * {
+  background-color: var(--base-color);
+}
+
+/* Styling the headings */
+#momence-embed #momence-plugin-host-schedule h4 {
+  color: var(--featured-color);
+}    
+
+/* Hide featured image */
+#momence-embed #momence-plugin-host-schedule .jQbyba {
+  display: none;
+}
+
+/* Styling the button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  border-radius: 0px;
+  background-color: var(--featured-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--base-color);
+}
+
+/* Hiding the author */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+  display: none;
+}
+
+/* Hiding the word class */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
+  display: none;
+}
+
+/* Hiding the description */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-description {
+  display: none;
+}
+
+/* Background in general */
+#momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  border-color: var(--featured-color);
+  background-color: var(--base-color);
+  color: var(--featured-color);
+}
+
+/* Boxes around arrows */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+  border-style: none;
+}
+
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+  font-family: Lora, serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Powered by button */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+  display: none;
+}
+
+/* Line under number at the bottom */
+#momence-embed #momence-plugin-host-schedule .momence-pagination-button::after {
+  background-color: var(--featured-color);
+}
 .placeholder\:text-featured::-moz-placeholder {
   color: var(--featured-color);
 }
-
 .placeholder\:text-featured::placeholder {
   color: var(--featured-color);
 }
-
 .focus\:border-black:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-
 .focus\:border-b-black:focus {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-
 @media (min-width: 640px) {
   .sm\:-left-20 {
     left: -5rem;
@@ -944,7 +1014,6 @@ p {
     line-height: 1;
   }
 }
-
 @media (min-width: 768px) {
   .md\:min-h-\[40vh\] {
     min-height: 40vh;
@@ -954,7 +1023,6 @@ p {
     padding-bottom: 4rem;
   }
 }
-
 @media (min-width: 1024px) {
   .lg\:p-10 {
     padding: 2.5rem;
@@ -969,7 +1037,6 @@ p {
     padding-right: 11rem;
   }
 }
-
 @media (min-width: 1280px) {
   .xl\:py-12 {
     padding-top: 3rem;
