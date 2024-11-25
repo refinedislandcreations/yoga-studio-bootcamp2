@@ -1,26 +1,26 @@
 classes:
- - name: Bikram Hot Yoga
-   image: /images/image-8.jpg
+ - name: Zen Flow
+   image: /images/pilates-yoga-studio-lombok-refined-island-creations-website-design-development.png
    image-alt:
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   description: A calming vinyasa class that focuses on deep stretching, breathwork, and mindful movement to promote relaxation and flexibility.
    button-url: www.google.com
    button-text: Sign up
- - name: Mandala Yoga
-   image: /images/image-3.jpg
+ - name: Core Fusion
+   image: /images/yoga-retreat-bali-refined-island-creations-website-design-development.png
    image-alt:
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   description: Strengthen your core and build stability with this dynamic class that combines yoga and pilates techniques for a full-body workout.
    button-url: www.google.com
    button-text: Sign up
- - name: Chakra Flow
-   image: /images/image-7.jpg
+ - name: Sunrise Stretch
+   image: /images/yoga-pilates-studio-bali-refined-island-creations-website-design-development.png
    image-alt:
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   description: Start your day with a gentle flow that awakens the body and mind, designed to ease stiffness and set a positive tone for the day ahead.
    button-url: www.google.com
    button-text: Sign up
- - name: Vinyasa Flow
-   image: /images/image-8.jpg
+ - name: Booty Booster
+   image: /images/pilates-yoga-studio-lombok-refined-island-creations-website-design-development.png
    image-alt:
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   description: Sculpt, lift, and tone your glutes in this energizing, fun class designed to target and strengthen your lower body.
    button-url: www.google.com
    button-text: Sign up
 
