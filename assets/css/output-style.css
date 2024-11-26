@@ -653,6 +653,10 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -729,6 +733,9 @@ video {
 }
 .text-featured {
   color: var(--featured-color);
+}
+.underline {
+  text-decoration-line: underline;
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -1017,6 +1024,10 @@ p {
 @media (min-width: 768px) {
   .md\:min-h-\[40vh\] {
     min-height: 40vh;
+  }
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .md\:py-16 {
     padding-top: 4rem;
