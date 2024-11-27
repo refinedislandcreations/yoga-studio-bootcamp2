@@ -1,7 +1,7 @@
   <section class="sm:border-b sm:border-featured">
     <div class="flex flex-col sm:grid sm:grid-cols-2 h-full">
 
-      <div class="bg-[length:101%] bg-center bg-no-repeat border-t border-featured sm:border-t-0 sm:border-r relative min-h-60 sm:min-h-[75vh] flex items-end {% if block.image-mobile-position == 'top' %} order-first {% else %} order-last {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} " style="background-image: url('{{ block.image }}'); alt: {{ block.image-alt }}; background-position: {{ block.image-position }}">
+      <div class="md:bg-[length:154%] bg-center bg-no-repeat border-featured sm:border-r relative min-h-60 sm:min-h-[75vh] flex items-end {% if block.image-mobile-position == 'top' %} order-first {% else %} order-last {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} " style="background-image: url('{{ block.image }}'); alt: {{ block.image-alt }}; background-position: {{ block.image-position }}">
         <div class="max-w-lg p-8 flex flex-col justify-end h-full pb-10 lg:pr-44 {% if block.image-desktop-position == 'left' %} border-l-0 {% endif %} ">
             <h3 class="heading-font text-4xl mt-2 sm:mt-0 pb-2 sm:pb-8 text-light">{{block.title}}</h3>
             <p class="pb-5 text-light">{{block.paragraph}}</p>
