@@ -8,7 +8,7 @@
       <div class="{% if block.items.size >= 4 %} shrink-0 {% endif %} {% if block.main-border == 'border' %} border border-featured px-5 sm:px-0 pt-5 {% endif %} mb-8 sm:mb-0">
         <div class="sm:text-center">
           <div class="flex flex-row justify-center relative min-h-30 md:min-h-[40vh] sm:mx-5">
-            <img src="{{item.image}}" alt="{{item.alt}}" class="object-cover w-full h-full absolute border" style="object-position: {{item.image-position}};">
+            <img src="{{item.image}}" alt="{{item.alt}}" loading="lazy" class="object-cover w-full h-full absolute border" style="object-position: {{item.image-position}};">
           </div>
           <p class="border-b border-featured py-2 sm:py-5 heading-font text-xl">{{item.label}}</p>
           <p class="pt-2 sm:pt-5 sm:pb-0 sm:px-2 max-w-md">{{item.description}}</p>
