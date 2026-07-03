@@ -42,4 +42,4 @@ User-agent: Bytespider
 Disallow: /
 
 # Sitemap
-Sitemap: https://refinedislandcreations.com/sitemap.xml
+Sitemap: https://the-yoga-studio.refinedislandcreations.com/sitemap.xml

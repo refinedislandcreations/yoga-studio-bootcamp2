@@ -5,9 +5,11 @@
         <div class="max-w-lg p-8 flex flex-col justify-end h-full pb-10 lg:pr-44 {% if block.image-desktop-position == 'left' %} border-l-0 {% endif %} ">
             <h3 class="heading-font text-4xl mt-2 sm:mt-0 pb-2 sm:pb-8 text-light">{{block.title}}</h3>
             <p class="pb-5 text-light">{{block.paragraph}}</p>
+            {% if block.button-url and block.button-url != "" %}
             <div>
               <a href="{{block.button-url}}" class="button px-5 py-2">{{block.button-text}}</a>
             </div>   
+            {% endif %}
         </div>
       </div>
 

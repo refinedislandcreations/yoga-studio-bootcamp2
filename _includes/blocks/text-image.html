@@ -7,9 +7,11 @@
         <div class="sm:max-w-lg">
           <h3 class="heading-font text-4xl mt-2 sm:mt-0 pb-2 sm:pb-8">{{block.title}}</h3>
           <p class="pb-5">{{block.paragraph}}</p>
+          {% if block.button-url and block.button-url != "" %}
           <div>
             <a href="{{block.button-url}}" class="button px-5 py-2">{{block.button-text}}</a>
           </div>
+          {% endif %}
         </div>
       </div>
       <div class="relative min-h-[40vh] sm:min-h-[75vh] {% if block.image-mobile-position == 'top' %} order-first {% endif %} {% if block.image-desktop-position == 'left' %} sm:order-first {% else %} sm:order-last {% endif %} ">

@@ -43,7 +43,7 @@ _options:
     strike: true
     image: true
 
-url: "https://refinedislandcreations.com" # the base hostname & protocol for your site
+url: "https://the-yoga-studio.refinedislandcreations.com" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

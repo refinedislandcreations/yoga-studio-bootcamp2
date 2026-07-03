@@ -12,7 +12,7 @@
           </div>
           <p class="border-b border-featured py-2 sm:py-5 heading-font text-xl">{{item.label}}</p>
           <p class="pt-2 sm:pt-5 sm:pb-0 sm:px-2 max-w-md">{{item.description}}</p>
-          {% if item.button-url %}
+          {% if item.button-url and item.button-url != "" %}
           <div class="pt-5 pb-5">
             <a href="{{item.button-url}}" class="button px-5 py-2 ">{{item.button-text}}</a>
           </div>

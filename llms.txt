@@ -4,10 +4,10 @@
 
 ## Key Pages
 
-- [Homepage](https://refinedislandcreations.com/) — Welcome to The Yoga Studio, offering peace and wellness classes for all levels in Bali and beyond.
-- [Classes](https://refinedislandcreations.com/classes.html) — Details on our diverse class offerings including Booty Booster, Zen Flow, Core Fusion, and Sunrise Stretch.
-- [Schedule](https://refinedislandcreations.com/schedule.html) — Our class timetable and booking information.
-- [Contact](https://refinedislandcreations.com/contact.html) — Get in touch with us to start your yoga journey.
+- [Homepage](https://the-yoga-studio.refinedislandcreations.com/) — Welcome to The Yoga Studio, offering peace and wellness classes for all levels in Bali and beyond.
+- [Classes](https://the-yoga-studio.refinedislandcreations.com/classes.html) — Details on our diverse class offerings including Booty Booster, Zen Flow, Core Fusion, and Sunrise Stretch.
+- [Schedule](https://the-yoga-studio.refinedislandcreations.com/schedule.html) — Our class timetable and booking information.
+- [Contact](https://the-yoga-studio.refinedislandcreations.com/contact.html) — Get in touch with us to start your yoga journey.
 
 ## Services / Products
 
