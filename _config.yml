@@ -44,6 +44,9 @@ _options:
     image: true
 
 url: "https://the-yoga-studio.refinedislandcreations.com" # the base hostname & protocol for your site
+title: "The Yoga Studio"
+description: "Discover The Yoga Studio, a tranquil space offering a variety of yoga classes for all levels in Bali and beyond."
+author: "Refined Island Creations"
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

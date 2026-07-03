@@ -1,3 +1,6 @@
+User-agent: *
+Allow: /
+
 # GEO — Search & citation bots (allow: generate AI recommendations and citations)
 User-agent: OAI-SearchBot
 Allow: /
