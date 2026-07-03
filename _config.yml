@@ -46,4 +46,5 @@ _options:
 url: "https://refinedislandcreations.com" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
   
