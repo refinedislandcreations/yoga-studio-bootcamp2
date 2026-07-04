@@ -25,10 +25,10 @@ seo:
     - Tailored websites for wellness studios
     - Elegant yoga studio branding
     - Creative web solutions for yoga businesses
-  social_image: /images/the-yoga-studio-refined-island-creations-website-design-development.png
+  social_image: /images/the-yoga-studio-refined-island-creations-website-design-development.webp
   hide-from-google: false
 header:
-  image: /images/the-yoga-studio-refined-island-creations-website-design-development.png
+  image: /images/the-yoga-studio-refined-island-creations-website-design-development.webp
   image-cover: 
   image-position: 65% 50%
   image-alt:
@@ -41,13 +41,13 @@ blocks:
   paragraph: At The Yoga Studio, we believe in creating a harmonious space where you can reconnect with your mind, body, and spirit. Nestled in a tranquil setting, our studio offers a wide variety of classes tailored to all levels, from beginners to seasoned practitioners. Whether you're seeking relaxation, strength, or flexibility, our experienced instructors are here to guide you on your journey to inner peace and balance. 
   button-url: /schedule.html
   button-text: Sign up
-  image: /images/yoga-classes-refined-island-creations-website-design-development.png
+  image: /images/yoga-classes-refined-island-creations-website-design-development.webp
   image-alt:
   image-position: 50% 20%
 - _id: image-text-grid
   image-mobile-position:
   image-desktop-position: left
-  image: /images/yoga-retreat-bali-refined-island-creations-website-design-development.png
+  image: /images/yoga-retreat-bali-refined-island-creations-website-design-development.webp
   image-position: 50% 28%
   image-alt:
   title: Our Classes
@@ -59,21 +59,21 @@ blocks:
   title: Testimonials
   main-border: 
   items:
-   - image: /images/google-review-yoga-studio-refined-island-creations-website-design-development.png
+   - image: /images/google-review-yoga-studio-refined-island-creations-website-design-development.webp
      image-position: 50% 52%
      image-alt:
      label: Emma
      description: The Yoga Studio has completely transformed my fitness routine. The Booty Booster class is my favorite – it’s challenging, fun, and I’ve already seen amazing results. The instructors are so motivating, and I always leave feeling stronger and more energized. 
      button-url:
      button-text:
-   - image: /images/customer-review-yoga-studio-refined-island-creations-website-design-development.png
+   - image: /images/customer-review-yoga-studio-refined-island-creations-website-design-development.webp
      image-position: 50% 42%
      image-alt:
      label: Sophia
      description: I’ve been coming to The Yoga Studio for months now, and I can’t imagine my week without it. Zen Flow has helped me feel more relaxed and balanced, and I love how the instructors guide you with such care and attention. It’s the perfect way to unwind after a busy day.
      button-url:
      button-text:
-   - image: /images/client-review-the-yoga-studio-refined-island-creations-website-design-development.png
+   - image: /images/client-review-the-yoga-studio-refined-island-creations-website-design-development.webp
      image-position: 50% 42%
      image-alt:
      label: Olivia
@@ -82,40 +82,4 @@ blocks:
      button-text:
 ---
 
-{% if site.data.faq %}
-<section class="pt-8 sm:pb-8 xl:py-12 bg-base" aria-label="Frequently Asked Questions">
-  <div class="container mx-auto px-8 max-w-4xl">
-    <h2 class="heading-font text-4xl mt-2 sm:mt-0 pb-5 sm:pb-8 text-center">Frequently Asked Questions</h2>
 
-    {% for item in site.data.faq %}
-    <details class="mb-4 border border-featured rounded-lg bg-white">
-      <summary class="cursor-pointer px-6 py-4 font-sans-serif text-lg font-medium text-gray-900 hover:bg-gray-50 outline-none">
-        {{ item.question }}
-      </summary>
-      <div class="px-6 py-4 border-t border-featured text-gray-700 font-sans-serif">
-        <p>{{ item.answer }}</p>
-      </div>
-    </details>
-    {% endfor %}
-  </div>
-</section>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {% for item in site.data.faq %}
-    {
-      "@type": "Question",
-      "name": {{ item.question | jsonify }},
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": {{ item.answer | jsonify }}
-      }
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ]
-}
-</script>
-{% endif %}

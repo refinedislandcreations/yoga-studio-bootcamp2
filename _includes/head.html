@@ -28,10 +28,10 @@
 <link rel="manifest" href="{{ site.url | append: '/icons/site.webmanifest' }}" />
 
 <!------------ Stylesheets  ------------>
-<link rel="preload" as="style" href="/assets/css/output-style.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/output-style.css">
-<link rel="stylesheet" type="text/css" href="/editor.css" />
-<link rel="stylesheet" type="text/css" href="/style.css" />
+<link rel="preload" as="style" href="{{ '/assets/css/output-style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" type="text/css" href="{{ '/assets/css/output-style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" type="text/css" href="{{ '/editor.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
+<link rel="stylesheet" type="text/css" href="{{ '/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
 
 <!-- GEO: Consolidated Schema @graph (For Google Rich Results & AI) -->
 <script type="application/ld+json">
@@ -98,7 +98,7 @@
       "name": "{{ site.title | escape }}",
       "url": "{{ site.url | append: '/' }}",
       "description": "{{ site.description | escape }}",
-      "image": "{{ site.url | append: '/images/the-yoga-studio-refined-island-creations-website-design-development.png' }}",
+      "image": "{{ site.url | append: '/images/the-yoga-studio-refined-island-creations-website-design-development.webp' }}",
       "parentOrganization": { "@id": "{{ site.url | append: '/#organization' }}" },
       "address": {
         "@type": "PostalAddress",
@@ -106,24 +106,7 @@
         "addressCountry": "ID"
       }
     }
-    {% if site.data.faq and page.url == '/' %},
-    {
-      "@type": "FAQPage",
-      "@id": "{{ site.url | append: '/#faq' }}",
-      "mainEntity": [
-        {% for item in site.data.faq %}
-        {
-          "@type": "Question",
-          "name": {{ item.question | jsonify }},
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": {{ item.answer | jsonify }}
-          }
-        }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      ]
-    }
-    {% endif %}
+
   ]
 }
 </script>

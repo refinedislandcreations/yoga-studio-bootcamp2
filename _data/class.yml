@@ -1,26 +1,27 @@
 classes:
  - name: Zen Flow
-   image: /images/pilates-yoga-studio-lombok-refined-island-creations-website-design-development.png
+   image: /images/pilates-yoga-studio-lombok-refined-island-creations-website-design-development.webp
    image-alt:
    description: A calming vinyasa class that focuses on deep stretching, breathwork, and mindful movement to promote relaxation and flexibility.
    button-url: www.google.com
    button-text: Sign up
  - name: Core Fusion
-   image: /images/yoga-retreat-bali-refined-island-creations-website-design-development.png
+   image: /images/yoga-retreat-bali-refined-island-creations-website-design-development.webp
    image-alt:
    description: Strengthen your core and build stability with this dynamic class that combines yoga and pilates techniques for a full-body workout.
    button-url: www.google.com
    button-text: Sign up
  - name: Sunrise Stretch
-   image: /images/yoga-pilates-studio-bali-refined-island-creations-website-design-development.png
+   image: /images/yoga-pilates-studio-bali-refined-island-creations-website-design-development.webp
    image-alt:
    description: Start your day with a gentle flow that awakens the body and mind, designed to ease stiffness and set a positive tone for the day ahead.
    button-url: www.google.com
    button-text: Sign up
  - name: Booty Booster
-   image: /images/pilates-yoga-studio-lombok-refined-island-creations-website-design-development.png
+   image: /images/pilates-yoga-studio-lombok-refined-island-creations-website-design-development.webp
    image-alt:
    description: Sculpt, lift, and tone your glutes in this energizing, fun class designed to target and strengthen your lower body.
    button-url: www.google.com
    button-text: Sign up
+
 
